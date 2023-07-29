@@ -181,7 +181,7 @@ drop table if exists daily_acquisitions;
 
 create table daily_acquisitions
 as
-select a.current_date, a.dau, b.wau, c.mau
+select a.current_date as curr_date, a.dau, b.wau, c.mau
 from daily_dau a
 	join daily_wau b on a.current_date = b.current_date
 	join daily_mau c on a.current_date = c.current_date
