@@ -26,7 +26,8 @@ BASE_INPUT AS
 ;
 
 
--- stickiness = DAU/MAU 
+
+-- stickiness = DAU/MAU MySQL 기준
 WITH daily AS (
 SELECT
   date_format(created_at, "%Y-%m-%d") AS day,
